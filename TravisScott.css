@@ -1,0 +1,829 @@
+body {
+    margin: 0;
+    font-family: Courier,Courier New,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    font-size: 17px;
+    height:100%;
+    
+}
+
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+   background: #9863BB ;
+    
+}
+
+
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 8px 0;
+    position: relative;
+    top:0;
+     -webkit-transition-duration: .25s;
+
+   
+}
+
+.logo:hover {
+    top:-15px; 
+   -webkit-transition-duration: .25s;  
+}
+
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+    
+    position: relative;
+}
+
+   
+    
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+
+nav a:hover {
+    color: #000;
+    
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.wrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper h1.glitch {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 1000;
+  position: relative;
+  font-size: 270%;
+  padding: 30px;
+    top: 50px;
+    
+}
+.wrapper h1.glitch::before, .wrapper h1.glitch::after {
+  padding: 30px;
+  color: white;
+  content: "Travis Scott";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: ;
+  overflow: hidden;
+  top: 0;
+}
+.wrapper h1.glitch::before {
+  left: 3px;
+  text-shadow: -2px 0 red;
+  animation-name: glitch-animation-1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+.wrapper h1.glitch::after {
+  left: -3px;
+  text-shadow: -2px 0 blue;
+  animation-name: glitch-animation-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+
+@keyframes glitch-animation-1 {
+  0% {
+    clip: rect(63px, 350px, 88px, 30px);
+  }
+  5% {
+    clip: rect(133px, 350px, 104px, 30px);
+  }
+  10% {
+    clip: rect(2px, 350px, 107px, 30px);
+  }
+  15% {
+    clip: rect(147px, 350px, 3px, 30px);
+  }
+  20% {
+    clip: rect(57px, 350px, 26px, 30px);
+  }
+  25% {
+    clip: rect(49px, 350px, 139px, 30px);
+  }
+  30% {
+    clip: rect(88px, 350px, 103px, 30px);
+  }
+  35% {
+    clip: rect(138px, 350px, 114px, 30px);
+  }
+  40% {
+    clip: rect(42px, 350px, 50px, 30px);
+  }
+  45% {
+    clip: rect(131px, 350px, 22px, 30px);
+  }
+  50% {
+    clip: rect(137px, 350px, 79px, 30px);
+  }
+  55% {
+    clip: rect(48px, 350px, 108px, 30px);
+  }
+  60% {
+    clip: rect(87px, 350px, 98px, 30px);
+  }
+  65% {
+    clip: rect(103px, 350px, 27px, 30px);
+  }
+  70% {
+    clip: rect(19px, 350px, 98px, 30px);
+  }
+  75% {
+    clip: rect(39px, 350px, 11px, 30px);
+  }
+  80% {
+    clip: rect(148px, 350px, 77px, 30px);
+  }
+  85% {
+    clip: rect(71px, 350px, 128px, 30px);
+  }
+  90% {
+    clip: rect(1px, 350px, 137px, 30px);
+  }
+  95% {
+    clip: rect(14px, 350px, 73px, 30px);
+  }
+  100% {
+    clip: rect(94px, 350px, 28px, 30px);
+  }
+}
+@keyframes glitch-animation-2 {
+  0% {
+    clip: rect(53px, 350px, 60px, 30px);
+  }
+  5% {
+    clip: rect(22px, 350px, 48px, 30px);
+  }
+  10% {
+    clip: rect(150px, 350px, 22px, 30px);
+  }
+  15% {
+    clip: rect(12px, 350px, 90px, 30px);
+  }
+  20% {
+    clip: rect(85px, 350px, 98px, 30px);
+  }
+  25% {
+    clip: rect(22px, 350px, 9px, 30px);
+  }
+  30% {
+    clip: rect(143px, 350px, 69px, 30px);
+  }
+  35% {
+    clip: rect(77px, 350px, 25px, 30px);
+  }
+  40% {
+    clip: rect(104px, 350px, 91px, 30px);
+  }
+  45% {
+    clip: rect(69px, 350px, 90px, 30px);
+  }
+  50% {
+    clip: rect(98px, 350px, 90px, 30px);
+  }
+  55% {
+    clip: rect(56px, 350px, 78px, 30px);
+  }
+  60% {
+    clip: rect(85px, 350px, 141px, 30px);
+  }
+  65% {
+    clip: rect(11px, 350px, 148px, 30px);
+  }
+  70% {
+    clip: rect(28px, 350px, 11px, 30px);
+  }
+  75% {
+    clip: rect(138px, 350px, 23px, 30px);
+  }
+  80% {
+    clip: rect(124px, 350px, 18px, 30px);
+  }
+  85% {
+    clip: rect(145px, 350px, 53px, 30px);
+  }
+  90% {
+    clip: rect(141px, 350px, 141px, 30px);
+  }
+  95% {
+    clip: rect(21px, 350px, 74px, 30px);
+  }
+  100% {
+    clip: rect(18px, 350px, 2px, 30px);
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.fab {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    width: 34px;
+    height: 32px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+  
+}
+
+.fab:hover {
+   
+    box-shadow: 0 0 10px 12px  rgba(145, 92, 182, 4);
+    background: rgb(145, 92, 182);
+   
+}
+
+
+ 
+a {
+    text-decoration: none;
+}
+
+#music{
+    margin: 100 auto 0 auto;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 30%;
+    
+    
+    
+   
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img[Attributes Style] {
+    width: 700px;
+    height: 700px;
+}
+
+#music:hover{
+     -webkit-transition-duration: .25s;
+	
+	box-shadow: 0px 0px 100px 4px  rgba(145, 92, 182, 4);
+    background: rgb(145, 92, 182);
+    
+}
+
+#video{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    margin: 0 auto 0 auto;
+
+}
+
+.video {
+    left:100px;
+    position: relative;
+}
+
+
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+    top:-900px;
+    position: relative;
+}
+
+
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+    font-family: Courier,Courier New,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+#btnshoes {
+    top: 470px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+  text-align: center;
+    position: absolute;
+   
+  
+}
+#btnshoes:hover {
+    background-color: #2D9CDB;  
+}
+
+
+
+#btnclothes {
+    top: 770px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+  text-align: center;
+    position: absolute;
+   
+  
+}
+#btnclothes:hover {
+    background-color: #2D9CDB;
+    
+}
+
+
+
+
+.shop-item {
+    margin: 30px;
+   
+}
+
+
+.shop-item-title {
+   text-align: center;
+   
+}
+
+.shop-item-image {
+   display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    
+  
+  
+}
+
+.shop-item-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+    text-align: center;
+   
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+shop-item-image {
+    max-width: 600px;
+    max-height:10px;
+}
+
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+    top:-900px;
+    position: relative;
+    
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+   top:-900px;
+    position: relative;
+}
+
+.cart-row {
+    display: flex;
+    
+   
+}
+
+.cart-item {
+    width: 45%;
+    top:-900px;
+    position: relative;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+    
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+   
+   
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    font-family: Courier,Courier New,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+    
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+   
+   top:-900px;
+    position: relative;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+    top:-900px;
+    position: relative;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    top:-900px;
+    position: relative;
+    font-family: Courier,Courier New,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+
+#hover {
+    position:relative;
+    top:0;
+     -webkit-transition-duration: .25s;
+}
+
+#hover:hover {
+    top:-20px; 
+   -webkit-transition-duration: .25s;  
+}
+#hover1 {
+    position:relative;
+    top:30px;
+     -webkit-transition-duration: .25s;
+    left:-350px;
+}
+
+#hover1:hover {
+    top:10px; 
+   -webkit-transition-duration: .25s;  
+}
+#hover2 {
+    position:relative;
+     -webkit-transition-duration: .25s;
+    right:-350px;
+    top: -440px;
+}
+
+#hover2:hover {
+    top:-460px; 
+   -webkit-transition-duration: .25s;  
+}
+
+#hover3 {
+    position:relative;
+     -webkit-transition-duration: .25s;
+    right:350px;
+    top: -350px;
+}
+
+#hover3:hover {
+    top:-370px; 
+   -webkit-transition-duration: .25s;  
+}
+
+#hover4 {
+    position:relative;
+    top:-1120px;
+     -webkit-transition-duration: .25s;
+    right:-350px;
+   
+}
+
+#hover4:hover {
+    top:-1140px; 
+   -webkit-transition-duration: .25s;  
+}
+
+#hover5 {
+    position:relative;
+    top:-1025px;
+     -webkit-transition-duration: .25s;
+  left:0px;
+   
+}
+
+#hover5:hover {
+    top:-1045px; 
+   -webkit-transition-duration: .25s;  
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+    
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+    
+}
+
+.btn2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+    font-family: Courier,Courier New,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+
+.btn2:hover {
+  background-color: #45a049;
+}
+
+
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.paylist {
+    top:-700px;
+    position: relative;
+    font-family: Courier,Courier New,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
